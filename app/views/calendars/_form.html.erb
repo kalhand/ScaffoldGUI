@@ -1,0 +1,47 @@
+<%= form_for @calendar do |f| %>
+  <div class="field">
+    <%= f.label :id %>
+    <%= f.text_field :id, {:required=>false, :disabled=>true} %>
+  </div>
+  <div class="field">
+    <%= f.label :job_name %>
+    <%= f.text_area :job_name, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :event_name %>
+    <%= f.text_area :event_name, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :all_day %>
+    <%= f.text_field :all_day, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :start_dt %>
+    <%= f.datetime_field :start_dt, {:required=>false, :disabled=>false, :class=>"datetime"} %>
+  </div>
+  <div class="field">
+    <%= f.label :end_date %>
+    <%= f.datetime_field :end_date, {:required=>false, :disabled=>false, :class=>"datetime"} %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %>
+    <%= f.text_field :user_id, {:required=>false, :disabled=>true} %>
+  </div>
+  <div class="field">
+    <%= f.label :created_at %>
+    <%= f.datetime_field :created_at, {:required=>false, :disabled=>false, :class=>"datetime"} %>
+  </div>
+  <div class="field">
+    <%= f.label :startMeridiem %>
+    <%= f.text_field :startMeridiem, {:required=>false, :disabled=>true} %>
+  </div>
+  <div class="field">
+    <%= f.label :endMeridiem %>
+    <%= f.text_field :endMeridiem, {:required=>false, :disabled=>true} %>
+  </div>
+  <div class="field">
+    <%= f.label :bgcolor %>
+    <%= f.text_field :bgcolor, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="actions"><%= f.submit %></div>
+<% end %>

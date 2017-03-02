@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  FINANCIAL_YEAR: MyString
+  YEAR: MyString
+  MONTH_NAME: MyString
+  MONTH_NUMBER: MyString
+  FOREX_RATE: 
+  ONSITE_RATE: 
+
+two:
+  FINANCIAL_YEAR: MyString
+  YEAR: MyString
+  MONTH_NAME: MyString
+  MONTH_NUMBER: MyString
+  FOREX_RATE: 
+  ONSITE_RATE: 

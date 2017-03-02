@@ -1,0 +1,84 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require jquery-ui/dialog
+ *= require jquery.simple-dtpicker
+ *= require_self
+ */
+#edit_modal {
+ /*   background-color: #abd1ed !important; */
+}
+/*.ui-widget {
+    font-size: .8em;
+    background-color: #abd1ed;
+}
+
+.ui-widget-content {
+    background-color: #abd1ed;
+    border: 1px solid #90d93f;
+    color: #222222;
+}
+
+.ui-widget-header {
+    background: #b0de78;
+    border: 0;
+    color: #fff;
+    font-weight: normal;
+}
+*/
+
+.modal-header {
+  background-color: #428bca;
+  color: #fff;
+}
+
+#modal_data {
+  font-size: 15px;
+  line-height: 23px;
+  margin: 10px;
+  padding: 10px;
+}
+
+form br {
+display: none;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+form label {
+  margin-right: 35px;
+  min-width: 40%;
+}
+
+form .actions {
+  border-top: 1px solid #e5e5e5;
+  padding: 15px;
+  text-align: right;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #428bca;
+ }
+
+.not-available {
+background-color: #dedede;
+    border-radius: 5px;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px 5px;
+
+}

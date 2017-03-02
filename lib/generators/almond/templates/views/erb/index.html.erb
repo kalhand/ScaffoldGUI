@@ -1,0 +1,42 @@
+<%%= link_to 'New <%= singular_name.titleize %>', new_<%= singular_name %>_path, remote: true %>
+<table data-source="<%%= @data_source %>">
+  <thead>
+    <tr>
+      <th>Edit</th>
+<% for attribute in model_attributes -%>
+      <th><%= attribute.human_name %></th>
+<% end -%>
+    </tr>
+  </thead>
+
+  <tbody>
+  </tbody>
+</table>
+
+<br>
+
+<%%= link_to 'New <%= singular_name.titleize %>', new_<%= singular_name %>_path, remote: true %>
+
+<div class="modal" id="edit_modal" tabindex="-1" role="dialog" aria-labelledby="mainModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="mainModalLabel">
+          <%= "Edit" %>
+          <%#= yield :title if content_for? :title %>&nbsp;
+        </h4>
+      </div>
+      <div id="modal_data"></div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+$('table').DataTable({
+    sPaginationType: "full_numbers",
+        bProcessing: true,
+        bServerSide: true,
+        sAjaxSource: $('table').data('source')
+  });
+</script>

@@ -1,0 +1,45 @@
+  .modal-header {
+  background-color: #428bca;
+  color: #fff;
+}
+
+#modal_data {
+  font-size: 15px;
+  line-height: 23px;
+  margin: 10px;
+  padding: 10px;
+}
+
+form br {
+display: none;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+form label {
+  margin-right: 35px;
+  min-width: 40%;
+}
+
+form .actions {
+  border-top: 1px solid #e5e5e5;
+  padding: 15px;
+  text-align: right;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #428bca;
+ }
+
+.not-available {
+background-color: #dedede;
+    border-radius: 5px;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px 5px;
+
+}

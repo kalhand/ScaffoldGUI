@@ -1,0 +1,22 @@
+<div class="widget-body">
+  <center>
+    <h1>Welcome to Automatic CRUD Creation</h1>
+    <div style="width:75%;">
+      <%= form_tag("/dbcredentials", method: "post") do %>
+        <%= label_tag :host %>
+        <%= text_field_tag :host %><br />
+        <%= label_tag :adapter %>
+        <%= text_field_tag :adapter, 'mysql2' %><br />
+        <%= label_tag :db %>
+        <%= text_field_tag :db %><br />
+        <%= label_tag :username %>
+        <%= text_field_tag :username %><br />
+        <%= label_tag :password %>
+        <%= password_field_tag :password %>
+	<div>
+          <%= submit_tag("Connect") %>
+	</div>
+      <% end %>
+    </div>
+  </center>
+</div>

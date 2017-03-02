@@ -1,0 +1,14 @@
+<div class="row-fluid">
+  <div class="metro-nav">
+    <% @list_models_data.each do |model| %>
+      <div class="metro-nav-block nav-block-<%= model['grid_color'] %>">
+        <a data-original-title=<%= model['display_name'] %>" href="<%= model['link'] %>">
+          <div class="info"><%= model['data_count'] %></div>
+          <div class="status"><%= model['display_name'] %></div>
+        </a>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+

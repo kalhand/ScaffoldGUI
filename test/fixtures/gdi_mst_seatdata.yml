@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  CENTER: MyString
+  LOCATION_CODE: MyString
+  LOCATION_DESC: MyString
+  BLOCK: MyString
+  WING: MyString
+  FLOOR: MyString
+  WORKSTATION_NUMBER: MyString
+  EMPLOYEE_ID: MyString
+  EMPLOYEE_NAME: MyString
+  LEVEL_4_MGR_NAME: MyString
+  LEVEL_5_MGR_NAME: MyString
+  LEVEL_6_MGR_NAME: MyString
+  LEVEL_7_MGR_NAME: MyString
+  LEVEL_8_MGR_NAME: MyString
+  MANAGER_ID: MyString
+  MANAGER_EMAIL_ID: MyString
+  MANAGER_NAME: MyString
+  SERVICE_LINE: MyString
+  LT_NAME: MyString
+  MONTH_NAME: MyString
+  COMMENTS: MyString
+  STATUS: MyString
+  UPDATE_DATE: 
+  DATE_OF_JOIN: 2015-06-18
+  WORK_CITY: MyString
+  ACCOUNT_NAME: MyString
+
+two:
+  CENTER: MyString
+  LOCATION_CODE: MyString
+  LOCATION_DESC: MyString
+  BLOCK: MyString
+  WING: MyString
+  FLOOR: MyString
+  WORKSTATION_NUMBER: MyString
+  EMPLOYEE_ID: MyString
+  EMPLOYEE_NAME: MyString
+  LEVEL_4_MGR_NAME: MyString
+  LEVEL_5_MGR_NAME: MyString
+  LEVEL_6_MGR_NAME: MyString
+  LEVEL_7_MGR_NAME: MyString
+  LEVEL_8_MGR_NAME: MyString
+  MANAGER_ID: MyString
+  MANAGER_EMAIL_ID: MyString
+  MANAGER_NAME: MyString
+  SERVICE_LINE: MyString
+  LT_NAME: MyString
+  MONTH_NAME: MyString
+  COMMENTS: MyString
+  STATUS: MyString
+  UPDATE_DATE: 
+  DATE_OF_JOIN: 2015-06-18
+  WORK_CITY: MyString
+  ACCOUNT_NAME: MyString

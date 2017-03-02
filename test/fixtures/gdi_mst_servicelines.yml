@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  SL_CODE: MyString
+  SL_NAME: MyString
+  LT_EMPLOYEEID: MyString
+  LT_FULLNAME: MyString
+  LT_SHORTNAME: MyString
+  UPDATE_DATE: 2015-06-18 15:45:44
+
+two:
+  SL_CODE: MyString
+  SL_NAME: MyString
+  LT_EMPLOYEEID: MyString
+  LT_FULLNAME: MyString
+  LT_SHORTNAME: MyString
+  UPDATE_DATE: 2015-06-18 15:45:44

@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Rate_Code: MyString
+  Job_Level: MyString
+
+two:
+  Rate_Code: MyString
+  Job_Level: MyString

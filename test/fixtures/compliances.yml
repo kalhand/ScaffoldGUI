@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ID: 1
+  EmpID: MyString
+  Date: MyString
+  Month: MyString
+  WeekOfMonth: MyString
+  Hours: MyString
+  EffortType: MyString
+  EffortDesc: MyString
+  Status: MyString
+  RUN_DATE: 2015-07-05 21:14:11
+  UPDATE_DATE: 2015-07-05 21:14:11
+
+two:
+  ID: 1
+  EmpID: MyString
+  Date: MyString
+  Month: MyString
+  WeekOfMonth: MyString
+  Hours: MyString
+  EffortType: MyString
+  EffortDesc: MyString
+  Status: MyString
+  RUN_DATE: 2015-07-05 21:14:11
+  UPDATE_DATE: 2015-07-05 21:14:11

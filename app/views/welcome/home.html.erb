@@ -1,0 +1,20 @@
+<h1>Welcome#home</h1>
+
+<%= form_tag("/dbcredentials", method: "post") do %>
+  <%= label_tag :host %>
+  <%= text_field_tag :host %><br />
+
+  <%= label_tag :adapter %>
+  <%= text_field_tag :adapter %><br />
+
+  <%= label_tag :db %>
+  <%= text_field_tag :db %><br />
+
+  <%= label_tag :username %>
+  <%= text_field_tag :username %><br />
+
+  <%= label_tag :password %>
+  <%= password_field_tag :password %><br />
+
+  <%= submit_tag("Connect") %>
+<% end %>

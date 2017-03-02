@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uuid_: MyString
+  ruleId: 1
+  groupId: 1
+  companyId: 1
+  userId: 1
+  userName: MyString
+  createDate: 2015-08-13 00:58:25
+  modifiedDate: 2015-08-13 00:58:25
+  ruleGroupId: 1
+  name: MyText
+  description: MyText
+  type_: MyString
+  typeSettings: MyText
+
+two:
+  uuid_: MyString
+  ruleId: 1
+  groupId: 1
+  companyId: 1
+  userId: 1
+  userName: MyString
+  createDate: 2015-08-13 00:58:25
+  modifiedDate: 2015-08-13 00:58:25
+  ruleGroupId: 1
+  name: MyText
+  description: MyText
+  type_: MyString
+  typeSettings: MyText

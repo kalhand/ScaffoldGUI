@@ -1,0 +1,25 @@
+<%%= form_for <%= item_path :instance_variable => true %> do |f| %>
+<%- for attribute in model_attributes -%>
+  <div class="field">
+    <%%= f.label :<%= attribute.name %> %>
+<% if attribute.type == 'email' -%>
+    <%%= f.email_field :<%= attribute.name %>, <%= attribute.attr_options[:class]%> %>
+<% elsif attribute.type == 'text' -%>
+    <%%= f.text_area :<%= attribute.name %>, <%= attribute.attr_options[:class]%> %>
+<% elsif attribute.type == 'password' -%>
+    <%%= f.password_field :<%= attribute.name %>, <%= attribute.attr_options[:class]%> %>
+<% elsif attribute.type == 'number' -%>
+    <%%= f.number_field :<%= attribute.name %>, <%= attribute.attr_options[:class]%> %>
+<% elsif attribute.type == 'boolean' -%>
+    <%%= f.check_box :<%= attribute.name %>, <%= attribute.attr_options[:class]%> %>
+<% elsif attribute.type == 'date' -%>
+    <%%= f.date_field :<%= attribute.name %>, <%= attribute.attr_options[:class]%> %>
+<% elsif attribute.type == 'datetime' -%>
+    <%%= f.datetime_field :<%= attribute.name %>, <%= attribute.attr_options[:class]%> %>
+<% else -%>
+    <%%= f.<%= attribute.field_type %> :<%= attribute.name %>, <%= attribute.attr_options[:class]%> %>
+<%- end -%>
+  </div>
+<%- end -%>
+  <div class="actions"><%%= f.submit %></div>
+<%% end %>

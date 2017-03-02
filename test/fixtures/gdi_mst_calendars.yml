@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ID: 1
+  MONTH_NAME: MyString
+  WEEK_IN_MONTH: MyString
+  NO_OF_WORKDAYS_IN_WEEK: 1.5
+  NO_OF_WORKDAYS_IN_MONTH: 1.5
+  WORKING_HOURS_DAILY: 1.5
+  MONTH_NUMBER: MyString
+
+two:
+  ID: 1
+  MONTH_NAME: MyString
+  WEEK_IN_MONTH: MyString
+  NO_OF_WORKDAYS_IN_WEEK: 1.5
+  NO_OF_WORKDAYS_IN_MONTH: 1.5
+  WORKING_HOURS_DAILY: 1.5
+  MONTH_NUMBER: MyString

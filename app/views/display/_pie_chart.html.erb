@@ -1,0 +1,66 @@
+<%
+graph_data = []
+@list_models_data.each do |model|
+  temp_data = {name: model['display_name'],y: model['data_count'],url: model['link']}
+  graph_data << temp_data.to_json
+end
+%>
+<script type="text/javascript">
+$(function () {
+    $('#chart_container').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        credits: {
+          enabled: false
+        },
+        title: {
+            text: 'GUI Crud'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.y}</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.y}',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            },
+           series: {
+                cursor: 'pointer',
+                point: {
+                    events: {
+                        click: function () {
+                            location.href = this.options.url;
+                        }
+                    }
+                }
+            }
+        },
+        series: [{
+            name: "Brands",
+            colorByPoint: true,
+            data:
+                [
+                  <% graph_data.each do |gr| %>
+                    <%= raw gr %>,
+                  <% end %>
+                ]
+        }]
+    });
+});
+		</script>
+
+
+<div id="chart_container" style="min-width: 800px; height: 600px; max-width: 800px;float:left;"></div>
+
+<%#= @list_models_data.inspect %>

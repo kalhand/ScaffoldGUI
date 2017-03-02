@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fileName: MyString
+  status: MyString
+  process_id: 1
+  process_date: 2015-07-02 11:37:49
+
+two:
+  fileName: MyString
+  status: MyString
+  process_id: 1
+  process_date: 2015-07-02 11:37:49

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ACTIVITY_CODE: MyString
+  WBS_ELEMENT: MyString
+  BILLABLE: MyString
+  RUN_DATE: 2015-06-18 15:54:00
+  UPDATE_DATE: 2015-06-18 15:54:00
+  MONTH_NAME: MyString
+
+two:
+  ACTIVITY_CODE: MyString
+  WBS_ELEMENT: MyString
+  BILLABLE: MyString
+  RUN_DATE: 2015-06-18 15:54:00
+  UPDATE_DATE: 2015-06-18 15:54:00
+  MONTH_NAME: MyString

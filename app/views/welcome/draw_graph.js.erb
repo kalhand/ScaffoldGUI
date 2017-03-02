@@ -1,0 +1,48 @@
+$(function () {
+
+    $('#dynamic_chart').highcharts({
+
+        chart: {
+            type: 'column',
+        },
+        credits: {
+          enabled: false
+        },
+        legend: {
+            enabled: true,
+                layout: 'horizontal',
+                align: 'right',
+                        verticalAlign: 'middle',
+            labelFormatter: function() {
+                                return this.name + " - <span class='total'>"+this.y+"</span>"
+            }
+        },
+        title: {
+            text: 'No of Forums'
+        },
+        xAxis: {
+            categories: ['First', 'Second', 'Third', 'Fourth', , 'Fifth'],
+            allowDecimals: false
+        },
+        yAxis: {
+            allowDecimals: false
+        },
+
+        series: [
+            {
+                showInLegend: false,
+                data: [
+                    {y: 6, name: 'First', color: 'blue'},
+                    {y: 7, name: 'Second', color: 'green'},
+                    {y: 9, name: 'Third', color: 'yellow'},
+                    {y: 1, name: 'Fourth', color: 'orange'},
+                    {y: 1, name: 'Fifth', color: 'red'}
+                ]
+            }
+        ],
+
+    });
+
+});
+
+//$("#modal_data").html("<%#= escape_javascript(render :partial => 'graphs') %>");

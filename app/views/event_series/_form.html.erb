@@ -1,0 +1,39 @@
+<%= form_for @event_series do |f| %>
+  <div class="field">
+    <%= f.label :id %>
+    <%= f.text_field :id, {:required=>false, :disabled=>true} %>
+  </div>
+  <div class="field">
+    <%= f.label :frequency %>
+    <%= f.number_field :frequency, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :period %>
+    <%= f.text_field :period, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :starttime %>
+    <%= f.datetime_field :starttime, {:required=>false, :disabled=>false, :class=>"datetime"} %>
+  </div>
+  <div class="field">
+    <%= f.label :endtime %>
+    <%= f.datetime_field :endtime, {:required=>false, :disabled=>false, :class=>"datetime"} %>
+  </div>
+  <div class="field">
+    <%= f.label :all_day %>
+    <%= f.check_box :all_day, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :created_at %>
+    <%= f.datetime_field :created_at, {:required=>false, :disabled=>false, :class=>"datetime"} %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_at %>
+    <%= f.datetime_field :updated_at, {:required=>false, :disabled=>false, :class=>"datetime"} %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %>
+    <%= f.text_field :user_id, {:required=>false, :disabled=>true} %>
+  </div>
+  <div class="actions"><%= f.submit %></div>
+<% end %>

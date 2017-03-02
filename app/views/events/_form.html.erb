@@ -1,0 +1,75 @@
+<%= form_for @event do |f| %>
+  <div class="field">
+    <%= f.label :id %>
+    <%= f.text_field :id, {:required=>false, :disabled=>true} %>
+  </div>
+  <div class="field">
+    <%= f.label :posts_reason %>
+    <%= f.text_area :posts_reason, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :posts_title %>
+    <%= f.text_area :posts_title, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :posts_description %>
+    <%= f.text_area :posts_description, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :is_active %>
+    <%= f.check_box :is_active, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :posted_by %>
+    <%= f.text_field :posted_by, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_by %>
+    <%= f.text_field :updated_by, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :post_type %>
+    <%= f.number_field :post_type, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :posted_at %>
+    <%= f.datetime_field :posted_at, {:required=>false, :disabled=>false, :class=>"datetime"} %>
+  </div>
+  <div class="field">
+    <%= f.label :created_at %>
+    <%= f.datetime_field :created_at, {:required=>false, :disabled=>false, :class=>"datetime"} %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_at %>
+    <%= f.datetime_field :updated_at, {:required=>false, :disabled=>false, :class=>"datetime"} %>
+  </div>
+  <div class="field">
+    <%= f.label :assign_to %>
+    <%= f.text_field :assign_to, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :anonymous_post %>
+    <%= f.check_box :anonymous_post, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :all_day %>
+    <%= f.check_box :all_day, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :event_series_id %>
+    <%= f.text_field :event_series_id, {:required=>false, :disabled=>true} %>
+  </div>
+  <div class="field">
+    <%= f.label :starttime %>
+    <%= f.datetime_field :starttime, {:required=>false, :disabled=>false, :class=>"datetime"} %>
+  </div>
+  <div class="field">
+    <%= f.label :endtime %>
+    <%= f.datetime_field :endtime, {:required=>false, :disabled=>false, :class=>"datetime"} %>
+  </div>
+  <div class="field">
+    <%= f.label :posts_aots %>
+    <%= f.text_field :posts_aots, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="actions"><%= f.submit %></div>
+<% end %>

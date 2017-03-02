@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  LHCC_CODE: MyString
+  SCS_CODE: MyString
+  LONG_SCS: MyString
+  RateCode: MyString
+  RUN_DATE: 2015-06-18 11:23:19
+  UPDATE_DATE: 2015-06-18 11:23:19
+  MONTH_NAME: MyString
+
+two:
+  LHCC_CODE: MyString
+  SCS_CODE: MyString
+  LONG_SCS: MyString
+  RateCode: MyString
+  RUN_DATE: 2015-06-18 11:23:19
+  UPDATE_DATE: 2015-06-18 11:23:19
+  MONTH_NAME: MyString

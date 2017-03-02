@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  RATE_CODE: MyString
+  LEVEL: MyString
+  RATE_CODE_LEVEL: MyString
+  RATE_INR: 
+  RATE_USD: 
+  RATE_CODE_BY_LEVEL: MyString
+  RUN_DATE: 2015-06-18 15:06:44
+  UPDATE_DATE: 2015-06-18 15:06:44
+  MONTH_NAME: MyString
+
+two:
+  RATE_CODE: MyString
+  LEVEL: MyString
+  RATE_CODE_LEVEL: MyString
+  RATE_INR: 
+  RATE_USD: 
+  RATE_CODE_BY_LEVEL: MyString
+  RUN_DATE: 2015-06-18 15:06:44
+  UPDATE_DATE: 2015-06-18 15:06:44
+  MONTH_NAME: MyString

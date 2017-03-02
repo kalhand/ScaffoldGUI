@@ -1,0 +1,102 @@
+<div class="widget-body">
+  <h2>Table info <b><%= @table %></b></h2>
+  <%#= @table_info.inspect %>
+  <table border=2>
+    <tr>
+      <th> Column Names </th>
+      <th> Column Types </th>
+      <th>Required</th>
+      <th>Numeric</th>
+      <th>Disable</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th>DateTime</th>
+      <th>Date</th>
+    </tr>
+    <%= form_tag(create_crud_path) do %>
+      <% @table_info.each do |c| %>
+        <tr>
+          <td align="center"> <%= c.name  %> </td>
+          <td align="center"> <%=c.type.to_s%></td>
+          <% if (c.name =~ /id/i) %>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'disabled', 1, :class=>"checked_tick"%><label class="checked_tick_label"></label></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+          <% elsif c.type.to_s == 'integer' %>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'required' %></td>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'numeric', 1, :class=>"checked_tick"%><label class="checked_tick_label"></label><br/>
+              <%= number_field_tag "#{c.name}[]", '', {:placeholder => "Min", :style=> "width:60px;"} %>
+              <%= number_field_tag "#{c.name}[]", '', {:placeholder => "Max", :style => 'width:60px;'} %>
+            </td>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'disabled'%></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+          <% elsif c.type.to_s == 'string' %>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'required' %></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'disabled'%></td>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'email'%></td>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'password'%></td>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'datetime'%></td>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'date'%></td>
+          <% elsif c.type.to_s == 'text' %>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'required' %></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'disabled'%></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+          <% elsif c.type.to_s == 'boolean' %>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'required' %></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'disabled'%></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+          <% elsif c.type.to_s == 'datetime' %>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'required' %></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'disabled'%></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'datetime', 1, :class=>"checked_tick"%><label class="checked_tick_label"></label></td>
+            <td align="center"><%= image_tag("not-available.png", :size => '18x18') %></td>
+          <% else %>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'required' %></td>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'numeric'%></td>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'disabled'%></td>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'email'%></td>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'password'%></td>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'datetime'%></td>
+            <td align="center"><%= check_box_tag "#{c.name}[]", 'date'%></td>
+          <% end %>
+        </tr>
+      <% end %>
+    <%= submit_tag('Create') %>
+    <% end %>
+    <%#= link_to "Create CRUD", create_crud_path(@table), class: "btn" %> 
+    <% Rails.application.routes%>
+  </table>
+</div>
+
+<style>
+.checked_tick {
+  display:none;
+}
+
+.checked_tick_label {
+  display: inline-block;
+  background-image: url('<%= asset_path 'tick.png' %>');
+  width: 30px;
+  height: 30px;
+}
+
+</style>

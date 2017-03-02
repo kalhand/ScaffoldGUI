@@ -1,0 +1,20 @@
+<div class='widget-body'>
+  <h3><%= "Total Cruds" %></h3>
+  <table>
+    <tr>
+      <th>Crud name</th>
+      <th>Crud link<th>
+    </tr>
+    <% if @my_cruds.count > 0 %>
+      <% @my_cruds.each do |crud| %>
+        <tr>
+          <td><%= crud.crud_name %></td>
+          <td><%= link_to crud.crud_link,crud.crud_link %></td>
+        </tr>
+      <% end %>
+    <% else %>
+      <h4>No cruds created yet</h4>
+    <% end %>
+  </table>
+</div>
+

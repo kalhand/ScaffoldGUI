@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  portalPreferencesId: 1
+  ownerId: 1
+  ownerType: 1
+  preferences: MyText
+
+two:
+  portalPreferencesId: 1
+  ownerId: 1
+  ownerType: 1
+  preferences: MyText

@@ -1,0 +1,16 @@
+
+                         <div class="widget-body">
+						<table>
+						<tr>
+							<th> Table Name </th>
+							<th> Info List </th>
+						</tr>
+						<% @tables.each do |table| %>
+						<tr>
+							<td> <%= table[0] %> </td>
+							<td> <%= link_to "Table info", table_info_path(table[0]) %> </td>
+							<td> <%#= link_to "Create CRUD", create_crud_path(table[0]), class: "btn" %> </td>
+						</tr>
+						<% end %>
+						</table>
+						 </div>

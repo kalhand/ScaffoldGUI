@@ -1,0 +1,50 @@
+<%= link_to 'New Calendar', new_calendar_path, remote: true %>
+<table data-source="<%= @data_source %>">
+  <thead>
+    <tr>
+      <th>Edit</th>
+      <th>Id</th>
+      <th>Job name</th>
+      <th>Event name</th>
+      <th>All day</th>
+      <th>Start dt</th>
+      <th>End date</th>
+      <th>User</th>
+      <th>Created at</th>
+      <th>Startmeridiem</th>
+      <th>Endmeridiem</th>
+      <th>Bgcolor</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Calendar', new_calendar_path, remote: true %>
+
+<div class="modal" id="edit_modal" tabindex="-1" role="dialog" aria-labelledby="mainModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="mainModalLabel">
+          Edit
+          &nbsp;
+        </h4>
+      </div>
+      <div id="modal_data"></div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+$('table').DataTable({
+    sPaginationType: "full_numbers",
+        bProcessing: true,
+        bServerSide: true,
+        sAjaxSource: $('table').data('source')
+  });
+</script>

@@ -1,0 +1,36 @@
+<div class="row">
+  <div style="width:60%;float:left;padding:20px;">
+    <%= render :partial => 'grid_data' %>
+    <%#= render :partial => 'charts' %>
+  </div>
+  <div style="width:24%;float:left;border:1px solid blue;margin-right:5px;padding:14px;">
+    <%= form_tag('/sign_in') do %>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+                            <div class="col-sm-9">
+                                <input name="email" class="form-control" id="inputEmail3" placeholder="Email" required="" type="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+                            <div class="col-sm-9">
+                                <input name="password" class="form-control" id="inputPassword3" placeholder="Password" required="" type="password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <div class="checkbox">
+                                    <label class="">
+                                        <input class="" type="checkbox">Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group last">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button type="submit" class="btn btn-success btn-sm">Sign in</button>
+                                <button type="reset" class="btn btn-default btn-sm">Reset</button>
+                            </div>
+                        </div>
+                    <% end %>
+  </div>
+</div>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <%= stylesheet_link_tag    'application', media: 'all'%>
+  <%= javascript_include_tag 'application' %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="container" class="row-fluid">      
+    <div id="main-content">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span12">
+            <div class="header">
+              <%#= image_tag('company_logo.png') %>
+              <h3>Myself</h3>
+            </div>
+            <ul class="breadcrumb">
+              <li>
+                <a href="http://localhost:3000/dashboards">Home</a>
+                <span class="divider">/</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span12">
+            <div class="widget red">
+              <div class="widget-title">
+                <h4>GUI CRUD </h4>
+                <div style="float:right;margin-right:20px;">
+                  <a href="#" data-target="#download_data" data-toggle="modal"><%= image_tag("download-csv.png") %> </a>
+                  <a href="#" data-target="#download_code" data-toggle="modal"><%= image_tag("download-icon.png", size: "30x30") %> </a>
+		</div>
+              </div>
+              <div class="widget-body">
+                <%= yield %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        2015 &copy; Deepak Kalhan
+      </div>
+    </div>
+  </div>
+   <!-- Modal for code download-->
+  <div id="download_code" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Download Source code</h4>
+        </div>
+        <div class="modal-body">
+           <%= form_tag "/download_sourcecode" do %>
+            <%= label_tag "Select language" %>
+            <%= select_tag(:language, options_for_select([['Select',''],["Ruby on Rails",'ror'],["Java", 'java'],["Dot Net", 'dot net']]), :class => 'form-control') %>
+        </div>
+        <div class="modal-footer">
+          <%= submit_tag "Download", :class => "btn btn-primary" %>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+           <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Ends -->
+
+  <!-- Modal for data download-->
+  <div id="download_data" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-sm">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Download Data</h4>
+        </div>
+        <div class="modal-body">
+           <%= form_tag "/download_data", :method => :get,  :id => 'download_data' do %>
+            <%= hidden_field_tag :table, @table_name %>
+            <%= label_tag "Select Format" %>
+            <%= select_tag(:format, options_for_select([['Select',''],["CSV",'csv']]), :class => 'form-control') %>
+        </div>
+        <div class="modal-footer">
+          <%= submit_tag "Download", :class => "btn btn-primary" %>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+           <% end %>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Modal Ends -->
+
+</body>
+<script type="text/javascript">
+  $('table').DataTable({
+    "pagingType": "full_numbers",
+    "stateSave": true,
+    "processing": true,
+    "serverSide": true,
+    "ajax": $('table').data('source'),
+  });
+  
+//  $('#download_data').submit(function(e){
+//  e.preventDefault();
+//});
+</script>
+
+<%#= javascript_include_tag "autoTable" %>
+</html>
+
+<style>
+.header {
+  margin:10px;
+  padding:20px;
+}
+.header h3 {
+  float:right;
+  font-weight: bold;
+  margin: 7px;
+}
+</style>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  SAP_ID: MyString
+  EMPLOYEE_ID: MyString
+  EMPLOYEE_NAME: MyString
+  RUN_DATE: 2015-06-18 13:22:55
+  UPDATE_DATE: 2015-06-18 13:22:55
+  MONTH_NAME: MyString
+
+two:
+  SAP_ID: MyString
+  EMPLOYEE_ID: MyString
+  EMPLOYEE_NAME: MyString
+  RUN_DATE: 2015-06-18 13:22:55
+  UPDATE_DATE: 2015-06-18 13:22:55
+  MONTH_NAME: MyString

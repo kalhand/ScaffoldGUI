@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  EFFORT_ID: 
+  EFFORT_TYPE: MyString
+  BILLABLE: MyString
+  RUN_DATE: 2015-06-17 19:32:32
+  BILLING_CLASSIFICATION: MyString
+  UPDATE_DATE: 2015-06-17 19:32:32
+  MONTH_NAME: MyString
+
+two:
+  EFFORT_ID: 
+  EFFORT_TYPE: MyString
+  BILLABLE: MyString
+  RUN_DATE: 2015-06-17 19:32:32
+  BILLING_CLASSIFICATION: MyString
+  UPDATE_DATE: 2015-06-17 19:32:32
+  MONTH_NAME: MyString

@@ -1,0 +1,43 @@
+<%= form_for @comment do |f| %>
+  <div class="field">
+    <%= f.label :id %>
+    <%= f.text_field :id, {:required=>false, :disabled=>true} %>
+  </div>
+  <div class="field">
+    <%= f.label :comments %>
+    <%= f.text_area :comments, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :post_id %>
+    <%= f.text_field :post_id, {:required=>false, :disabled=>true} %>
+  </div>
+  <div class="field">
+    <%= f.label :created_by %>
+    <%= f.text_field :created_by, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_by %>
+    <%= f.text_field :updated_by, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :is_active %>
+    <%= f.check_box :is_active, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :anonymous_comment %>
+    <%= f.check_box :anonymous_comment, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :created_at %>
+    <%= f.datetime_field :created_at, {:required=>false, :disabled=>false, :class=>"datetime"} %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_at %>
+    <%= f.datetime_field :updated_at, {:required=>false, :disabled=>false, :class=>"datetime"} %>
+  </div>
+  <div class="field">
+    <%= f.label :refer_to %>
+    <%= f.text_field :refer_to, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="actions"><%= f.submit %></div>
+<% end %>

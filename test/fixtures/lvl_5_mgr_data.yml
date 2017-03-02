@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  LEVEL_5_MGR_NAME: MyString
+  Month_Name: MyString
+  WeekNo: MyString
+  Week1_Target_Hrs: 1.5
+  Week1_Target_Amt: 1.5
+  Week1_Hours: 1.5
+  Week1_Amt: 1.5
+  Week2_Target_Hrs: 1.5
+  Week2_Target_Amt: 1.5
+  Week2_Hours: 1.5
+  Week2_Amt: 1.5
+  Week3_Target_Hrs: 1.5
+  Week3_Target_Amt: 1.5
+  Week3_Hours: 1.5
+  Week3_Amt: 1.5
+  Week4_Target_Hrs: 1.5
+  Week4_Target_Amt: 1.5
+  Week4_Hours: 1.5
+  Week4_Amt: 1.5
+  Week5_Target_Hrs: 1.5
+  Week5_Target_Amt: 1.5
+  Week5_Hours: 1.5
+  Week5_Amt: 1.5
+  TotalHours: 1.5
+  TotalAmount: 1.5
+
+two:
+  LEVEL_5_MGR_NAME: MyString
+  Month_Name: MyString
+  WeekNo: MyString
+  Week1_Target_Hrs: 1.5
+  Week1_Target_Amt: 1.5
+  Week1_Hours: 1.5
+  Week1_Amt: 1.5
+  Week2_Target_Hrs: 1.5
+  Week2_Target_Amt: 1.5
+  Week2_Hours: 1.5
+  Week2_Amt: 1.5
+  Week3_Target_Hrs: 1.5
+  Week3_Target_Amt: 1.5
+  Week3_Hours: 1.5
+  Week3_Amt: 1.5
+  Week4_Target_Hrs: 1.5
+  Week4_Target_Amt: 1.5
+  Week4_Hours: 1.5
+  Week4_Amt: 1.5
+  Week5_Target_Hrs: 1.5
+  Week5_Target_Amt: 1.5
+  Week5_Hours: 1.5
+  Week5_Amt: 1.5
+  TotalHours: 1.5
+  TotalAmount: 1.5

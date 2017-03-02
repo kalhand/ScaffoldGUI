@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idtest_deepaks: 1
+  name: MyString
+  first_name: MyString
+
+two:
+  idtest_deepaks: 1
+  name: MyString
+  first_name: MyString

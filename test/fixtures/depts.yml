@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  deptid: 1
+  dname: MyString
+  loc: MyString
+
+two:
+  deptid: 1
+  dname: MyString
+  loc: MyString

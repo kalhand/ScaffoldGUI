@@ -1,0 +1,204 @@
+<script type="text/javascript">
+
+$(function () {
+    
+    $('#chart_1').highcharts({
+
+        chart: {
+            type: 'column',
+        },
+        credits: {
+          enabled: false
+        },
+        legend: {
+            enabled: true,
+	    	layout: 'horizontal',
+    		align: 'right',
+			verticalAlign: 'middle',
+            labelFormatter: function() {
+				return this.name + " - <span class='total'>"+this.y+"</span>"
+            }
+        },
+        title: {
+            text: 'No of Forums'
+        },
+        xAxis: {
+            categories: ['First', 'Second', 'Third', 'Fourth', , 'Fifth'],
+            allowDecimals: false
+        },
+        yAxis: {
+            allowDecimals: false
+        },
+
+        series: [
+            {
+                showInLegend: false,
+                data: [
+                    {y: 6, name: 'First', color: 'blue'},
+                    {y: 7, name: 'Second', color: 'green'},
+                    {y: 9, name: 'Third', color: 'yellow'},
+                    {y: 1, name: 'Fourth', color: 'orange'},
+                    {y: 1, name: 'Fifth', color: 'red'}
+                ]
+            }
+        ],
+
+    });
+
+});
+
+
+$(function () {
+    
+    $('#chart_2').highcharts({
+
+        chart: {
+            type: 'column',
+        },
+        credits: {
+         enabled: false
+        },
+        legend: {
+            enabled: true,
+	    	layout: 'horizontal',
+    		align: 'right',
+			verticalAlign: 'middle',
+            labelFormatter: function() {
+				return this.name + " - <span class='total'>"+this.y+"</span>"
+            }
+        },
+        title: {
+            text: 'GitLab Projects'
+        },
+        xAxis: {
+            categories: ['First', 'Second', 'Third', 'Fourth', , 'Fifth'],
+            allowDecimals: false
+        },
+        yAxis: {
+            allowDecimals: false
+        },
+
+        series: [
+            {
+                showInLegend: false,
+                data: [
+                    {y: 6, name: 'First', color: 'blue'},
+                    {y: 7, name: 'Second', color: 'green'},
+                    {y: 9, name: 'Third', color: 'yellow'},
+                    {y: 1, name: 'Fourth', color: 'orange'},
+                    {y: 1, name: 'Fifth', color: 'red'}
+                ]
+            }
+        ],
+
+    });
+
+});
+
+
+$(function () {
+    
+    $('#chart_3').highcharts({
+
+        chart: {
+            type: 'column',
+        },
+        credits: {
+          enabled: false
+        },
+        legend: {
+            enabled: true,
+	    	layout: 'horizontal',
+    		align: 'right',
+			verticalAlign: 'middle',
+            labelFormatter: function() {
+				return this.name + " - <span class='total'>"+this.y+"</span>"
+            }
+        },
+        title: {
+            text: 'No of CRUDS'
+        },
+        xAxis: {
+            categories: ['First', 'Second', 'Third', 'Fourth', , 'Fifth'],
+            allowDecimals: false
+        },
+        yAxis: {
+            allowDecimals: false
+        },
+
+        series: [
+            {
+                showInLegend: false,
+                data: [
+                    {y: 6, name: 'First', color: 'blue'},
+                    {y: 7, name: 'Second', color: 'green'},
+                    {y: 9, name: 'Third', color: 'yellow'},
+                    {y: 1, name: 'Fourth', color: 'orange'},
+                    {y: 1, name: 'Fifth', color: 'red'}
+                ]
+            }
+        ],
+
+    });
+
+});
+
+
+$(function () {
+    
+    $('#chart_4').highcharts({
+
+        chart: {
+            type: 'column',
+        },
+        credits: {
+          enabled: false
+        },
+        legend: {
+            enabled: true,
+	    	layout: 'horizontal',
+    		align: 'right',
+			verticalAlign: 'middle',
+            labelFormatter: function() {
+				return this.name + " - <span class='total'>"+this.y+"</span>"
+            }
+        },
+        title: {
+            text: 'No of Projects'
+        },
+        xAxis: {
+            categories: ['First', 'Second', 'Third', 'Fourth', , 'Fifth'],
+            allowDecimals: false
+        },
+        yAxis: {
+            allowDecimals: false
+        },
+
+        series: [
+            {
+                showInLegend: false,
+                data: [
+                    {y: 6, name: 'First', color: 'blue'},
+                    {y: 7, name: 'Second', color: 'green'},
+                    {y: 9, name: 'Third', color: 'yellow'},
+                    {y: 1, name: 'Fourth', color: 'orange'},
+                    {y: 1, name: 'Fifth', color: 'red'}
+                ]
+            }
+        ],
+
+    });
+
+});
+
+
+</script>
+
+
+
+
+
+<div id="chart_1" style="height: 300px;width: 40%;"></div>
+<div id="chart_2" style="height: 300px;width:40%;"></div>
+
+

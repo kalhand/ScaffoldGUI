@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  RESOURCE_POOL_NAME: MyString
+  SL_NAME: MyString
+  RUN_DATE: 2015-06-18 15:05:31
+  UPDATE_DATE: 2015-06-18 15:05:31
+  MONTH_NAME: MyString
+
+two:
+  RESOURCE_POOL_NAME: MyString
+  SL_NAME: MyString
+  RUN_DATE: 2015-06-18 15:05:31
+  UPDATE_DATE: 2015-06-18 15:05:31
+  MONTH_NAME: MyString

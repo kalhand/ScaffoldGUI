@@ -1,0 +1,11 @@
+$("#modal_data").html("<%= escape_javascript(render :partial => 'form') %>");
+//$("#edit_modal").dialog({
+//      height: 500,
+//      width: 500,
+//      modal: true,
+//});
+$("#edit_modal").modal('show');
+$(function(){
+  $('.datetime').appendDtpicker();
+});
+

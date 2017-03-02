@@ -1,0 +1,19 @@
+<%= form_for @job do |f| %>
+  <div class="field">
+    <%= f.label :id %>
+    <%= f.text_field :id, {:required=>false, :disabled=>true} %>
+  </div>
+  <div class="field">
+    <%= f.label :job_name %>
+    <%= f.text_field :job_name, {:required=>false, :disabled=>false} %>
+  </div>
+  <div class="field">
+    <%= f.label :date_time %>
+    <%= f.datetime_field :date_time, {:required=>false, :disabled=>false, :class=>"datetime"} %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %>
+    <%= f.text_field :user_id, {:required=>false, :disabled=>true} %>
+  </div>
+  <div class="actions"><%= f.submit %></div>
+<% end %>

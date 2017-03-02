@@ -1,0 +1,20 @@
+                         <div class="widget-body">
+				<h2>List of all Controller Paths</h2>
+				<table> 
+					<tr> 
+						<th> Path </th>
+						<th> Link </th>
+					</tr>
+
+				<% @listcontrollers.each do |listcontrollers| %>
+				<tr>
+						<td> <%= listcontrollers %> </td>
+						<td> <%= link_to listcontrollers, listcontrollers, class: "btn" %> </td>
+				</tr>
+				<%end%>
+				</table>
+				</div>
+
+
+				
+	

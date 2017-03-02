@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  categoryPropertyId: 1
+  companyId: 1
+  userId: 1
+  userName: MyString
+  createDate: 2015-08-13 00:50:43
+  modifiedDate: 2015-08-13 00:50:43
+  categoryId: 1
+  key_: MyString
+  value: MyString
+
+two:
+  categoryPropertyId: 1
+  companyId: 1
+  userId: 1
+  userName: MyString
+  createDate: 2015-08-13 00:50:43
+  modifiedDate: 2015-08-13 00:50:43
+  categoryId: 1
+  key_: MyString
+  value: MyString

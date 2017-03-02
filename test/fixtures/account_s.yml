@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  accountId: 1
+  companyId: 1
+  userId: 1
+  userName: MyString
+  createDate: 2015-08-13 00:37:33
+  modifiedDate: 2015-08-13 00:37:33
+  parentAccountId: 1
+  name: MyString
+  legalName: MyString
+  legalId: MyString
+  legalType: MyString
+  sicCode: MyString
+  tickerSymbol: MyString
+  industry: MyString
+  type_: MyString
+  size_: MyString
+
+two:
+  accountId: 1
+  companyId: 1
+  userId: 1
+  userName: MyString
+  createDate: 2015-08-13 00:37:33
+  modifiedDate: 2015-08-13 00:37:33
+  parentAccountId: 1
+  name: MyString
+  legalName: MyString
+  legalId: MyString
+  legalType: MyString
+  sicCode: MyString
+  tickerSymbol: MyString
+  industry: MyString
+  type_: MyString
+  size_: MyString

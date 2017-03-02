@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+   <meta charset="utf-8" />
+   <title>Metro Lab</title>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+   <meta content="" name="description" />
+   <meta content="Mosaddek" name="author" />
+
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="fixed-top">
+   <!-- BEGIN HEADER -->
+  
+   <!-- BEGIN CONTAINER -->
+   <div id="container" class="row-fluid">
+      
+      <!-- BEGIN PAGE -->  
+      <div id="main-content">
+         <!-- BEGIN PAGE CONTAINER-->
+         <div class="container-fluid">
+            <!-- BEGIN PAGE HEADER-->   
+            <div class="row-fluid">
+               <div class="span12">
+                   <!-- BEGIN THEME CUSTOMIZER-->
+                   
+                   <!-- END THEME CUSTOMIZER-->
+                  <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+                   <h3 class="page-title">
+                     Dashboard
+                   </h3>
+                   <ul class="breadcrumb">
+                       <li>
+                           <a href="#">Home</a>
+                           <span class="divider">/</span>
+                       </li>
+                       <li>
+                           <a href="#">Database Credentials</a>
+                           <span class="divider">/</span>
+                       </li>
+                       <li>
+                          Show All Tables
+			  <span class="divider">/</span>
+
+                       </li>
+			<li class="active">
+                          Table Summary
+			  <span class="divider">/</span>
+
+                       </li>
+
+                       <li class="pull-right search-wrap">
+                           <form action="search_result.html" class="hidden-phone">
+                               <div class="input-append search-input-area">
+                                   <input class="" id="appendedInputButton" type="text">
+                                   <button class="btn" type="button"><i class="icon-search"></i> </button>
+                               </div>
+                           </form>
+                       </li>
+                   </ul>
+                   <!-- END PAGE TITLE & BREADCRUMB-->
+               </div>
+            </div>
+            <!-- END PAGE HEADER-->
+            <!-- BEGIN PAGE CONTENT-->
+             <div class="row-fluid">
+                 <div class="span12">
+                     <!-- BEGIN BLANK PAGE PORTLET-->
+                     <div class="widget red">
+                         <div class="widget-title">
+                             <h4><i class="icon-edit"></i> Table Summary </h4>
+                           <span class="tools">
+                               <a href="javascript:;" class="icon-chevron-down"></a>
+                               <a href="javascript:;" class="icon-remove"></a>
+                           </span>
+                         </div>
+                         <div class="widget-body">
+				<h2>List of all Controller Paths</h2>
+				<table> 
+					<tr> 
+						<th> Path </th>
+						<th> Link </th>
+					</tr>
+
+				<% @listcontrollers.each do |listcontrollers| %>
+				<tr>
+						<td> <%= listcontrollers %> </td>
+						<td> <%= link_to listcontrollers, listcontrollers, target: "_blank", class: "btn" %> </td>
+				</tr>
+				<%end%>
+				</table>
+				</div>
+
+
+				
+	
+                     </div>
+                     <!-- END BLANK PAGE PORTLET-->
+                 </div>
+             </div>
+            <!-- END PAGE CONTENT-->   </div>
+   <!-- END CONTAINER -->
+
+   <!-- BEGIN FOOTER -->
+   <div id="footer">
+       2015 &copy; Deepak Kalhan
+   </div>
+    
+</body>
+<!-- END BODY -->
+</html>
